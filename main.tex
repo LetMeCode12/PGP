@@ -1,0 +1,174 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Template for lab reports used at STIMA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sets the document class for the document
+% Openany is added to remove the book style of starting every new chapter on an odd page (not needed for reports)
+\documentclass[11pt,polish, openany]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Loading packages that alter the style
+\usepackage[]{graphicx}
+\usepackage[]{color}
+\usepackage{alltt}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+
+% Set page margins
+\usepackage[top=100pt,bottom=100pt,left=68pt,right=66pt]{geometry}
+
+% Package used for placeholder text
+\usepackage{lipsum}
+
+% Prevents LaTeX from filling out a page to the bottom
+\raggedbottom
+
+% Adding both languages
+\usepackage[english, polish]{babel}
+
+% All page numbers positioned at the bottom of the page
+\usepackage{fancyhdr}
+\fancyhf{} % clear all header and footers
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\pagestyle{fancy}
+
+% Changes the style of chapter headings
+\usepackage{titlesec}
+\titleformat{\chapter}
+   {\normalfont\LARGE\bfseries}{\thechapter.}{1em}{}
+% Change distance between chapter header and text
+\titlespacing{\chapter}{0pt}{50pt}{2\baselineskip}
+
+% Adds table captions above the table per default
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+
+% Adds space between caption and table
+\usepackage[tableposition=top]{caption}
+
+% Adds hyperlinks to references and ToC
+\usepackage{hyperref}
+\hypersetup{hidelinks,linkcolor = black} % Changes the link color to black and hides the hideous red border that usually is created
+
+% If multiple images are to be added, a folder (path) with all the images can be added here 
+\graphicspath{ {Figures/} }
+
+% Separates the first part of the report/thesis in Roman numerals
+\frontmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Starts the document
+\begin{document}
+
+%%% Selects the language to be used for the first couple of pages
+\selectlanguage{polish}
+
+%%%%% Adds the title page
+\begin{titlepage}
+	\clearpage\thispagestyle{empty}
+	\centering
+	\vspace{1cm}
+
+	% Titles
+	% Information about the University
+	{\normalsize Uniwersytet Technologiczno-Przyrodniczy \\ 
+		im. Jana i Jędrzeja Śniadeckich \\
+		w Bydgoszczy \par}
+		\vspace{3cm}
+	{\Huge \textbf{Projektowanie i programowanie gier}} \\
+	%\vspace{1cm}
+	%{\large \textbf{xxxxx} \par}
+	\vspace{4cm}
+	{\normalsize DOKUMENTACJA PROJEKTU GRY GOTHIC \\ % \\ specifies a new line
+	             Paweł Rudnicki 110974 \\
+	             Norbert Skulski 110797\par}
+	\vspace{5cm}
+    
+    \centering \includegraphics[scale=0.5]{utp.png}
+    
+    \vspace{0.5cm}
+		
+	% Set the date
+	{\normalsize 12-03-2020 \par}
+	
+	\pagebreak
+
+\end{titlepage}
+
+% Adds a table of contents
+\tableofcontents{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Text body starts here!
+\mainmatter
+
+\chapter{Wstępny abstrakt}\label{chapt:sum}
+Fabuła gry opowiada historię o bezimiennym bohaterze w kolonii karnej znanej również jako Górnicza Dolina.
+Jest ona usytuwana na wyspie Khorinis, która została otoczona magiczną barierą, którą można pokonać
+tylko ze strony świata zewnętrznego ponieważ wszelkie próby wydostania się z jej wnętrza kończą się tragicznie.
+Magiczna bariera została stworzona przez magów na rozkaz króla Rhobara II w celu zapobiegnięcia kradzieży
+magicznej rudy wydobywanej w owej dolinie, którą potrzebował do produkcji broni.
+Król Rhobar II pokonał niemal wszystkich wrogów swojego królestwa. Poza orkami. Trzeba rzec, że nigdy nie grzeszyli
+inteligencją, lecz ich główną umiejętnością jest formowanie szyków przejawiających się przeogromną siłą, i 
+determinacją, które są nieodzowną zaletą w celu osiągnięcia końca gatunku ludzkiego. Historia gry rozpoczyna się, kiedy
+główny bohater trafia do Górniczej Doliny jako kolejny, nic nie znaczący jeniec, którym został poprzez narażenie się na drobne
+kradzieże wbrew interesu królestwa. Zanim zostanie on zesłany, i przejdzie przez magiczną barierę otrzymuje list od Maga Ognia
+zaadresowany do Najwyższego Maga Ognia stacjonującego w tak zwanym Starym Obozie, który jest jednym z trzech głównych obozów rozśanych po
+Górniczej Dolinie. Defakto, nie jest to jego jedyny cel jaki otrzymał. Bezimienny bohater chce również uciec z Górniczej Doliny, jak tylko będzie
+potrafił.
+
+\includegraphics[scale=0.9]{mapa.jpg}
+
+Świat jaki gracz ma do dyspozycji to już wspomniana wcześniej Górnicza Dolina, w której znajdują się trzy obozy konkurujące ze sobą o wszelakie zasoby pozwalające przetrwać w tym brutalnym świecie oraz wieża tajemniczego maga Xardasa.
+\begin{itemize}
+    \item [1] \textbf{Stary Obóz} - Najstarszy ze wszystkich obozów, mieszczący się na terenie zamku, w którym niegdyś mieszkała straż królewska, magnaci, magowie ognia oraz kopacze, a który po stworzeniu bariery został przejęty przez więźniów. W odróżnieniu od reszty ten obóz rządzi się surowymi prawami. Posiada kopalnię magicznej rudy. Tylko ten obóz prowadzi wymianę z królem, chociaż Nowy Obóz także posiada swoją kopalnię. Z trzech obozów tylko ten nie planuje zniszczyć bariery, jego celem jest wyłącznie handel z królem i Obozem Bractwa. Dzięki temu jest najbogatszy ze wszystkich. Rhobar II, w zamian za magiczną rudę, oddaje wszystko, czego Stary Obóz zażąda. Stary Obóz otoczony jest drewnianą palisadą i dzieli się na zewnętrzny pierścień, w którym żyją kopacze i cienie, oraz wewnętrzny (zamek), gdzie przebywają strażnicy, magowie ognia i magnaci. Przywódcą Starego Obozu jest magnat o imieniu Gomez. W zewnętrznym pierścieniu znajduje się również arena, gdzie walczą przedstawiciele trzech obozów, a także plac targowy. Inne grupy więźniów również posiadają swoich przywódców. Przywódcą strażników jest Thorus, cieni – Diego, a magów ognia – Corristo.
+    \item [2] \textbf{Nowy Obóz} - Obóz powstały jako efekt rozłamu w Starym Obozie. Dąży do zniszczenia magicznej bariery i uwolnienia więźniów poprzez detonację wielkiego kopca rudy. Potrzebny w tym celu surowiec wydobywają w Wolnej Kopalni krety. Większość domostw, siedziba magów wody oraz góra rudy znajduje się w wielkiej jaskini. Członkowie Nowego Obozu to głównie dezerterzy i uciekinierzy ze Starego Obozu. W tym obozie nie ma zasad, a prawo to tylko abstrakcyjne pojęcie. By jednak chronić wielki kopiec magicznej rudy, magowie wody zatrudnili najemników, którzy chronią ich i kopiec przed szkodnikami. Jest to, mimo ogromnej ilości posiadanej rudy, najbiedniejszy obóz, utrzymujący się głównie z napadów na konwoje Starego Obozu, przez co znajdują się o krok od wojny domowej. Dzięki tamie wodnej i odpowiednim warunkom możliwa jest uprawa ryżu, który służy m.in. do produkcji ryżówki – alkoholu sprzedawanego w karczmie. Przywódcą najemników w Nowym Obozie jest Generał Lee, wtrącony do kolonii za morderstwo, którego nie popełnił. Przywódcą szkodników jest Lares, a arcymistrzem magów wody – Saturas.
+    \item [3] \textbf{Obóz Bractwa} - Jest to obóz (nazywany również Obozem na Bagnie lub Obozem Sekty), którego członkowie wyrzekli się starych bogów, czcząc Śniącego, który ma im pomóc w odzyskaniu wolności. Dzięki wizji Y'Beriona, duchowego przywódcy bractwa, uwierzyli, że Śniący ma za zadanie pomóc wiernym, niszcząc barierę, a niewiernych ukarać. Obóz Sekty propaguje palenie bagiennego ziela, rosnącego tylko tutaj. Każdy nowicjusz dostaje dzienną porcję, by móc pozostać w duchowym kontakcie ze Śniącym. Niektórzy guru po większej ilości bagiennego ziela mają wizje dotyczące Śniącego. Przez pozostałych więźniów członkowie bractwa są uważani za świrów, czy też wariatów, być może z powodu tatuaży na ciele, dziwnych strojów, całkowicie ogolonych głów lub po prostu odmiennych wierzeń. Wielu więźniów dołącza do tego obozu głównie z powodu bagiennego ziela i jego specjalnych właściwości. Obóz składa się z drewnianych domów stojących na ziemi i zawieszonych na drzewach oraz świątyni, w której mieszka Y'Berion wraz z Natalią i Chani, które najprawdopodobniej są jego kurtyzanami. Mieszkańcy obozu dzielą się na nowicjuszy, których głównym zadaniem jest zbieranie i obróbka bagiennego ziela, guru, którzy otrzymują wizje od Śniącego oraz strażników świątynnych, którzy pilnują bezpieczeństwa, a także zbierają wydzielinę pełzaczy – potworów podobnych do wielkich pająków nękających kopaczy w Starej Kopalni. Ośmiu guru przewodzi obozowi. Najwyższy z nich to Y'Berion, którego zastępcą jest Cor Kalom, a trzecią najważniejszą osobą w całym bractwie jest Cor Angar. Pozostałych pięciu guru to Baal Namib, Baal Cadar, Baal Tyon, Baal Orun i Baal Tondral.
+    \item [4] \textbf{Wieża Xardasa} - druga wieża nekromanty Xardasa. Znajduje się w samym środku terytoriów należących do orków, w małej kotlince niedaleko miasta orków. Jest także najbardziej wysuniętym na południe punktem Górniczej Doliny.Xardas wzniósł ją po zniszczeniu poprzedniej wieży z pomocą służących mu ożywieńców. Droga do wieży jest bardzo ciężka i pełna niebezpieczeństw. Dostać się do niej można idąc przez wąski wąwóz, który broniony jest przez kamiennego golema, lodowego golema oraz ognistego golema
+\end{itemize}
+\chapter{Rozszerzone streszczenie gry}
+\section{Literature review}
+\section{Reference solution}
+\chapter{Projektowanie świata gry}\label{chapt:doe}
+\chapter{Projektowanie postaci}\label{chapt:model}
+\section{Problem geometry and setup}
+\section{Mesh generation and description}
+\section{Numerical schemes}
+
+\chapter{Flowboard}\label{chapt:results}
+\section{Test 1}
+\subsection{Grid convergence}
+
+\chapter{Rozwój fabuły i zmiany poziomów}\label{chapt:results}
+\section{Test 1}
+\subsection{Grid convergence}
+
+\chapter{Scenariusz}\label{chapt:results}
+\section{Test 1}
+\subsection{Grid convergence}
+\chapter{Uwagi}
+
+\pagebreak
+
+
+% Adding a bibliography if citations are used in the report
+\bibliographystyle{plain}
+\bibliography{bibliography.bib}
+% Adds reference to the Bibliography in the ToC
+\addcontentsline{toc}{chapter}{\bibname}
+
+\pagebreak
+
+\chapter*{Appendix A: Resources}
+[\textit{Report the config files of the software used (i.e. SU2 \cite{economon2015su2} and the mesher). Also attach to this report an archive with the mesh files, solutions and the reference solution data (e.g. data points of a Cp plot ...)}]
+\section*{Mesh configuration files}
+\section*{SU2 configuration files}
+% \section{Reference solution data}
+
+
+\end{document}
