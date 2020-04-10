@@ -1,0 +1,1256 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/Pawel/Desktop/MICIAK/
+\textclass book
+\begin_preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Template for lab reports used at STIMA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sets the document class for the document
+% Openany is added to remove the book style of starting every new chapter on an odd page (not needed for reports)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Loading packages that alter the style
+\usepackage{color}
+\usepackage{alltt}
+
+
+
+
+
+% Set page margins
+
+
+% Package used for placeholder text
+\usepackage{lipsum}
+
+
+% Prevents LaTeX from filling out a page to the bottom
+\raggedbottom
+
+% Adding both languages
+\usepackage[english, polish]{babel}
+
+
+% All page numbers positioned at the bottom of the page
+\usepackage{fancyhdr}
+\fancyhf{} % clear all header and footers
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+
+
+% Changes the style of chapter headings
+\usepackage{titlesec}
+\titleformat{\chapter}
+   {\normalfont\LARGE\bfseries}{\thechapter.}{1em}{}
+% Change distance between chapter header and text
+\titlespacing{\chapter}{0pt}{50pt}{2\baselineskip}
+
+% Adds table captions above the table per default
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+
+% Adds space between caption and table
+\usepackage[tableposition=top]{caption}
+
+
+% Adds hyperlinks to references and ToC
+ % Changes the link color to black and hides the hideous red border that usually is created
+
+% If multiple images are to be added, a folder (path) with all the images can be added here 
+\graphicspath{ {Figures/} }
+
+% Separates the first part of the report/thesis in Roman numerals
+\frontmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Starts the document
+
+\end_preamble
+\options openany
+\use_default_options false
+\maintain_unincluded_children false
+\language polish
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 0
+\pdf_backref section
+\pdf_pdfusetitle 0
+\pdf_quoted_options "hidelinks,linkcolor=black"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style polish
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%% Selects the language to be used for the first couple of pages
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang polish
+
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%% Adds the title page
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Titles
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Information about the University
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+normalsize
+\end_layout
+
+\end_inset
+
+ Uniwersytet Technologiczno-Przyrodniczy 
+\begin_inset Newline newline
+\end_inset
+
+ im. Jana i Jędrzeja Śniadeckich 
+\begin_inset Newline newline
+\end_inset
+
+ w Bydgoszczy 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 3cm
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Huge
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Projektowanie i programowanie gier
+\series default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+vspace{1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%{
+\backslash
+large 
+\backslash
+textbf{xxxxx} 
+\backslash
+par}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 4cm
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+normalsize
+\end_layout
+
+\end_inset
+
+ DOKUMENTACJA PROJEKTU GRY GOTHIC 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+
+\backslash
+ specifies a new line
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ Paweł Rudnicki 110974 
+\begin_inset Newline newline
+\end_inset
+
+ Norbert Skulski 110797
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename utp.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Set the date
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+normalsize
+\end_layout
+
+\end_inset
+
+ 12-03-2020 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Adds a table of contents
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%% Text body starts here!
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\lang polish
+Wstępny abstrakt
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chapt:sum"
+
+\end_inset
+
+ Fabuła gry opowiada historię o bezimiennym bohaterze w kolonii karnej znanej również jako Górnicza Dolina. Jest ona usytuwana na wyspie Khorinis, która została otoczona magiczną barierą, którą można pokonać tylko ze strony świata zewnętrznego ponieważ wszelkie próby wydostania się z jej wnętrza kończą się tragicznie. Magiczna bariera została stworzona przez magów na rozkaz króla Rhobara II w celu zapobiegnięcia kradzieży magicznej rudy wydobywanej w owej dolinie, którą potrzebował do produkcji broni. Król Rhobar II pokonał niemal wszystkich wrogów swojego królestwa. Poza orkami. Trzeba rzec, że nigdy nie grzeszyli inteligencją, lecz ich główną umiejętnością jest formowanie szyków przejawiających się przeogromną siłą, i determinacją, które są nieodzowną zaletą w celu osiągnięcia końca gatunku ludzkiego. Historia gry rozpoczyna się, kiedy główny bohater trafia do Górniczej Doliny jako kolejny, nic nie znaczący jeniec, którym został poprzez narażenie się na drobne kradzieże wbrew interesu królestwa. Zanim zostanie on zesłany, i przejdzie przez magiczną barierę otrzymuje list od Maga Ognia zaadresowany do Najwyższego Maga Ognia stacjonującego w tak zwanym Starym Obozie, który jest jednym z trzech głównych obozów rozśanych po Górniczej Dolinie. Defakto, nie jest to jego jedyny cel jaki otrzymał. Bezimienny bohater chce również uciec z Górniczej Doliny, jak tylko będzie potrafił.
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset Graphics 
+	filename mapa.jpg
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+Świat jaki gracz ma do dyspozycji to już wspomniana wcześniej Górnicza Dolina, w której znajdują się trzy obozy konkurujące ze sobą o wszelakie zasoby pozwalające przetrwać w tym brutalnym świecie oraz wieża tajemniczego maga Xardasa. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang polish
+
+\begin_inset Argument item:1
+status collapsed
+
+
+\begin_layout Standard
+
+\lang polish
+1
+\end_layout
+
+\end_inset
+
+
+\series bold
+Stary Obóz
+\series default
+ - Najstarszy ze wszystkich obozów, mieszczący się na terenie zamku, w którym niegdyś mieszkała straż królewska, magnaci, magowie ognia oraz kopacze, a który po stworzeniu bariery został przejęty przez więźniów. W odróżnieniu od reszty ten obóz rządzi się surowymi prawami. Posiada kopalnię magicznej rudy. Tylko ten obóz prowadzi wymianę z królem, chociaż Nowy Obóz także posiada swoją kopalnię. Z trzech obozów tylko ten nie planuje zniszczyć bariery, jego celem jest wyłącznie handel z królem i Obozem Bractwa. Dzięki temu jest najbogatszy ze wszystkich. Rhobar II, w zamian za magiczną rudę, oddaje wszystko, czego Stary Obóz zażąda. Stary Obóz otoczony jest drewnianą palisadą i dzieli się na zewnętrzny pierścień, w którym żyją kopacze i cienie, oraz wewnętrzny (zamek), gdzie przebywają strażnicy, magowie ognia i magnaci. Przywódcą Starego Obozu jest magnat o imieniu Gomez. W zewnętrznym pierścieniu znajduje się również arena, gdzie walczą przedstawiciele trzech obozów, a także plac targowy. Inne grupy więźniów również posiadają swoich przywódców. Przywódcą strażników jest Thorus, cieni – Diego, a magów ognia – Corristo. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang polish
+
+\begin_inset Argument item:1
+status collapsed
+
+
+\begin_layout Standard
+
+\lang polish
+2
+\end_layout
+
+\end_inset
+
+
+\series bold
+Nowy Obóz
+\series default
+ - Obóz powstały jako efekt rozłamu w Starym Obozie. Dąży do zniszczenia magicznej bariery i uwolnienia więźniów poprzez detonację wielkiego kopca rudy. Potrzebny w tym celu surowiec wydobywają w Wolnej Kopalni krety. Większość domostw, siedziba magów wody oraz góra rudy znajduje się w wielkiej jaskini. Członkowie Nowego Obozu to głównie dezerterzy i uciekinierzy ze Starego Obozu. W tym obozie nie ma zasad, a prawo to tylko abstrakcyjne pojęcie. By jednak chronić wielki kopiec magicznej rudy, magowie wody zatrudnili najemników, którzy chronią ich i kopiec przed szkodnikami. Jest to, mimo ogromnej ilości posiadanej rudy, najbiedniejszy obóz, utrzymujący się głównie z napadów na konwoje Starego Obozu, przez co znajdują się o krok od wojny domowej. Dzięki tamie wodnej i odpowiednim warunkom możliwa jest uprawa ryżu, który służy m.in. do produkcji ryżówki – alkoholu sprzedawanego w karczmie. Przywódcą najemników w Nowym Obozie jest Generał Lee, wtrącony do kolonii za morderstwo, którego nie popełnił. Przywódcą szkodników jest Lares, a arcymistrzem magów wody – Saturas. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang polish
+
+\begin_inset Argument item:1
+status collapsed
+
+
+\begin_layout Standard
+
+\lang polish
+3
+\end_layout
+
+\end_inset
+
+
+\series bold
+Obóz Bractwa
+\series default
+ - Jest to obóz (nazywany również Obozem na Bagnie lub Obozem Sekty), którego członkowie wyrzekli się starych bogów, czcząc Śniącego, który ma im pomóc w odzyskaniu wolności. Dzięki wizji Y'Beriona, duchowego przywódcy bractwa, uwierzyli, że Śniący ma za zadanie pomóc wiernym, niszcząc barierę, a niewiernych ukarać. Obóz Sekty propaguje palenie bagiennego ziela, rosnącego tylko tutaj. Każdy nowicjusz dostaje dzienną porcję, by móc pozostać w duchowym kontakcie ze Śniącym. Niektórzy guru po większej ilości bagiennego ziela mają wizje dotyczące Śniącego. Przez pozostałych więźniów członkowie bractwa są uważani za świrów, czy też wariatów, być może z powodu tatuaży na ciele, dziwnych strojów, całkowicie ogolonych głów lub po prostu odmiennych wierzeń. Wielu więźniów dołącza do tego obozu głównie z powodu bagiennego ziela i jego specjalnych właściwości. Obóz składa się z drewnianych domów stojących na ziemi i zawieszonych na drzewach oraz świątyni, w której mieszka Y'Berion wraz z Natalią i Chani, które najprawdopodobniej są jego kurtyzanami. Mieszkańcy obozu dzielą się na nowicjuszy, których głównym zadaniem jest zbieranie i obróbka bagiennego ziela, guru, którzy otrzymują wizje od Śniącego oraz strażników świątynnych, którzy pilnują bezpieczeństwa, a także zbierają wydzielinę pełzaczy – potworów podobnych do wielkich pająków nękających kopaczy w Starej Kopalni. Ośmiu guru przewodzi obozowi. Najwyższy z nich to Y'Berion, którego zastępcą jest Cor Kalom, a trzecią najważniejszą osobą w całym bractwie jest Cor Angar. Pozostałych pięciu guru to Baal Namib, Baal Cadar, Baal Tyon, Baal Orun i Baal Tondral. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang polish
+
+\begin_inset Argument item:1
+status collapsed
+
+
+\begin_layout Standard
+
+\lang polish
+4
+\end_layout
+
+\end_inset
+
+
+\series bold
+Wieża Xardasa
+\series default
+ - druga wieża nekromanty Xardasa. Znajduje się w samym środku terytoriów należących do orków, w małej kotlince niedaleko miasta orków. Jest także najbardziej wysuniętym na południe punktem Górniczej Doliny.Xardas wzniósł ją po zniszczeniu poprzedniej wieży z pomocą służących mu ożywieńców. Droga do wieży jest bardzo ciężka i pełna niebezpieczeństw. Dostać się do niej można idąc przez wąski wąwóz, który broniony jest przez kamiennego golema, lodowego golema oraz ognistego golema 
+\end_layout
+
+\begin_layout Chapter
+
+\lang polish
+Rozszerzone streszczenie gry
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+Akcja gry rozgrywa się na terenie kopalni Korinis osadzonej w Górniczej dolinie. Ówczesny król Myrtany Robar II toczący wojnę z orkami potrzebował surowców aby dostarczyć swoim wojską wyposażenie. Nakazał więc wysłanie wszystkich skazańców z królestwa do Korinis aby przeprowadzali wydobycie potrzebnych zasobów. By uniemożliwić im ucieczkę nakazał stworzenie magicznej bariery. Podczas tworzenia magicznej bariery nie wszystko poszło zgodnie z planem i uwięziła ona również magów ja tworzących. 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics 
+	filename bariera.jpg
+	scale 37
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Bohater gry to więzień o nieznanym imieniu, Zostaje wtrącony do kolonii karnej za nieznane graczowi przestępstwo. Przed wtrąceniem dostaje od maga zadanie dostarczenia listu do jego pobratymców znajdujących się pod drugiej stronie bariery. Po wtrąceniu na teren bariery przechodzi „Chrzest”. Zostaje pobity przez znajdujących się tam więźniów. Przed śmiercią ratuje go wysoko postawiony łucznik ze starego obozu o imieniu Diego. Od tamtej pory jednym z jego początkowych zadań jest staranie się o przynależność do jednego z obozów. W tym celu Bezimienny musi wykonywać zadania zlecane mu przez ważne osobistości w wybranym obozie. Po przystąpieniu do którejkolwiek frakcji bohater otrzymuje od jej władz polecenie pomocy Bractwu Śniącego w przygotowaniach rytuału nawiązania kontaktu z Śniącym. Wyznawcy Śniącego wierzą, że gdy dojdzie do przebudzenia ich śpiącego boga, pomoże im on wydostać się z kolonii karnej. Skazaniec otrzymuje prawo do audiencji u przywódcy Bractwa – Y'Beriona. Każe on odnaleźć bohaterowi kamień ogniskujący – artefakt, który był wykorzystywany w procesie tworzenia magicznej bariery. 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang polish
+
+\begin_inset Graphics 
+	filename kognisk.png
+	scale 20
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+Po odnalezieniu kamienia alchemik Bractwa imieniem Cor Kalom informuje Bezimiennego, że do przygotowania rytuału potrzebna jest mu wydzielina żyjących w Starej Kopalni groźnych stworzeń zwanych pełzaczami. W tym celu Bractwo regularnie wysyła do kopalni strażników świątynnch, którzy przynoszą Cor Kalomowi wnętrzności zabitych stworzeń. Cor Kalom uważa jednak, że musi istnieć efektywniejsze źródło wydzieliny niż wnętrzności pełzaczy i wysyła bohatera na wyprawę celem znalezienia go. Bohater udaje się do kopalni, gdzie odkrywa lokalizację gniazda stworzeń. Dostaje się do niego, pokonuje ich królową i zabiera jaja pełzaczy do Cor Kaloma. Ostatnią rzeczą potrzebną do przeprowadzenia rytuału jest księga zwana Almanachem – zawiera ona instrukcje wykorzystywania kamienia ogniskującego. Bezimienny znajduje ją w jaskini będącą kryjówką wrogo nastawionych czarnych goblinów. Uczestnikom rytuału objawia się wizja ruin, w których rezydują orkowie. Tuż po zakończeniu wizji przewodzący ceremonii Y'Berion traci przytomność. Bezimienny zostaje wysłany na pomoc ekspedycji wysłanej w celu zbadania leżącego w pobliżu obozu Bractwa cmentarzyska orków. Na miejscu okazuje się, że ekspedycja zawiodła, a cmentarzysko nie zawiera żadnej wskazówki co do dalszych działań. Bohater wraca do obozu. Wkrótce potem Y'Berion umiera. Tuż przed śmiercią ostrzega przed dalszymi próbami budzenia Śniącego i upatruje nadziei na wolność w planie magów wody z Nowego Obozu. Plan ów polega na detonacji wielkiego kopca magicznej rudy. Na polecenie arcymaga wody imieniem Saturas Bezimienny odnajduje pozostałe kamienie ogniskujące i zostaje wysłany z misją przekonania magów ognia ze Starego Obozu do podjęcia próby zniszczenia bariery. W międzyczasie dochodzi do podmycia Starej Kopalni przez podziemny zbiornik wodny. Kopalnia ta była źródłem przychodów dla Starego Obozu. Przywódca rządzących obozem magnatów imieniem Gomez rozkazuje przejąć zbrojnie należącą do Nowego Obozu Wolną Kopalnię. Mieszkający w Starym Obozie magowie ognia sprzeciwili się planom władz obozu i zostali wymordowani z rozkazu magnatów. Aby uniknąć odwetu ze strony Nowego Obozu, Gomez nakazuje strażnikom zamknięcie bram oraz atakowanie każdego, kto się do nich zbliża. Jeśli Bezimienny podjął decyzję o zostaniu członkiem Starego Obozu to zostanie z niego usunięty. W wyniku braku możliwości skorzystania z pomocy magów ognia Saturas informuje bohatera o trzynastym magu uczestniczącym w procesie tworzenia bariery o imieniu Xardas i każe go odnaleźć. 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang polish
+
+\begin_inset Graphics 
+	filename xardas.png
+	scale 50
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+Xardas to nekromanta, który mieszka samotnie w wieży na środku terytorium zajętego przez orków. Po odnalezieniu go bohater dowiaduje się, że ma on własny pomysł na zniszczenie bariery i że plan magów wody jest nieskuteczny. Zleca on Bezimiennemu odnalezienie zbuntowanego orkowego szamana imieniem Ur-Shak, ochronienie go przed tropiącymi go pobratymcami oraz przesłuchanie go. Ur-Shak informuje nas, że Śniący jest demonem przywołanym przed wiekami przez orkowych szamanów z innego wymiaru. Sam zaś Śniący przebywa na dnie skomplikowanego podziemnego kompleksu jaskiń i korytarzy zwanym Świątynią Śniącego. 
+\begin_inset Newpage newpage
+\end_inset
+
+Wejście do świątyni znajduje się w Mieście Orków znajdującym się na terytorium tej rasy. Aby bezpiecznie poruszać się po terytorium orków i dotrzeć do ich miasta bohater potrzebuje amuletu o nazwie Ulu-Mulu. 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang polish
+
+\begin_inset Graphics 
+	filename umumulu.png
+	scale 20
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+Pomóc w jego wykonaniu ma Bezimiennemu przyjaciel Ur-Shaka pochwycony przez ludzi jako niewolnik i zmuszony do pracy w Wolnej Kopalni. Zdaniem Xardasa magia Śniącego wpłynęła na proces powstawania bariery i jedynym sposobem na zniszczenie jej jest wygnanie demona. Następnie, bohater wraz z najemnikiem Gornem z Nowego Obozu ruszają na odsiecz Wolnej Kopalni i odzyskują ją z rąk strażników Gomeza. Orkowy niewolnik pomaga Bezimiennemu wykonać amulet. Po dotarciu do Miasta Orków bohater odnajduje wejście do Świątyni Śniącego i dostaje się do środka. Po drodze pokonuje orkowych szamanów-ożywieńców i zbiera ich oręż, który służy jako klucze do bram broniących dostępu do Śniącego. Ponadto Bezimienny odkrywa dodatkowy starożytny miecz o nazwie Uriziel pilnowany przez jednego z szamanów. Ten jednak jest bezużyteczny. Ostatni napotkany szaman okazuje się niewrażliwy na jakąkolwiek broń lub zaklęcie. Bohater wydostaje się ze świątyni i wraca do wieży Xardasa. Nekromanta opowiada mu historię znalezionego miecza. Zgodnie z sugestią nekromanty bohater wraz z jedynym ocalałym z rzezi magiem ognia wykorzystują kopiec magicznej rudy zgromadzony w Nowym Obozie do naprawy oręża. Bezimienny ściąga na siebie w ten sposób gniew magów wody. Po ucieczce z Nowego Obozu bohater wraca do Świątyni Śniącego, pokonuje ostatniego szamana i dociera do leża demona. Na miejscu staje naprzeciw obudzonego Śniącego. Używając mieczy orkowych szamanów Bezimienny otwiera portal prowadzący do wymiaru, z którego przybył Śniący. Gra kończy się po tym, jak za pomocą Uriziela Bezimienny wtrąca przeciwnika do innego świata.
+\end_layout
+
+\begin_layout Chapter
+
+\lang polish
+Projektowanie świata gry
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chapt:doe"
+
+\end_inset
+
+ XDDDDDDDDDDDDDDDDDD 
+\end_layout
+
+\begin_layout Chapter
+
+\lang polish
+Projektowanie postaci
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chapt:model"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+
+\lang polish
+Problem geometry and setup
+\end_layout
+
+\begin_layout Section
+
+\lang polish
+Mesh generation and description
+\end_layout
+
+\begin_layout Section
+
+\lang polish
+Numerical schemes
+\end_layout
+
+\begin_layout Chapter
+
+\lang polish
+Flowboard
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chapt:results"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+
+\lang polish
+Test 1
+\end_layout
+
+\begin_layout Subsection
+
+\lang polish
+Grid convergence
+\end_layout
+
+\begin_layout Chapter
+
+\lang polish
+Rozwój fabuły i zmiany poziomów
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chapt:results"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+
+\lang polish
+Test 1
+\end_layout
+
+\begin_layout Subsection
+
+\lang polish
+Grid convergence
+\end_layout
+
+\begin_layout Chapter
+
+\lang polish
+Scenariusz
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chapt:results"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+
+\lang polish
+Test 1
+\end_layout
+
+\begin_layout Subsection
+
+\lang polish
+Grid convergence
+\end_layout
+
+\begin_layout Chapter
+
+\lang polish
+Uwagi
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Adding a bibliography if citations are used in the report
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibliography.bib"
+options "plain"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Adds reference to the Bibliography in the ToC
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+bibname}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+
+\lang polish
+Appendix A: Resources
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+[
+\shape italic
+Report the config files of the software used (i.e. SU2 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "economon2015su2"
+literal "false"
+
+\end_inset
+
+ and the mesher). Also attach to this report an archive with the mesh files, solutions and the reference solution data (e.g. data points of a Cp plot ...)
+\shape default
+] 
+\end_layout
+
+\begin_layout Section*
+
+\lang polish
+Mesh configuration files
+\end_layout
+
+\begin_layout Section*
+
+\lang polish
+SU2 configuration files
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+section{Reference solution data}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

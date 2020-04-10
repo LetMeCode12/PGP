@@ -3,18 +3,26 @@
 \contentsline {chapter}{\numberline {1}Wstępny abstrakt}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Rozszerzone streszczenie gry}{4}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Projektowanie świata gry}{8}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Projektowanie postaci}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Problem geometry and setup}{9}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Mesh generation and description}{9}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Numerical schemes}{9}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Flowboard}{10}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Test 1}{10}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Grid convergence}{10}{subsection.5.1.1}%
-\contentsline {chapter}{\numberline {6}Rozwój fabuły i zmiany poziomów}{11}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Test 1}{11}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Grid convergence}{11}{subsection.6.1.1}%
-\contentsline {chapter}{\numberline {7}Scenariusz}{12}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Test 1}{12}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Grid convergence}{12}{subsection.7.1.1}%
-\contentsline {chapter}{\numberline {8}Uwagi}{13}{chapter.8}%
-\contentsline {chapter}{Bibliografia}{14}{chapter*.2}%
+\contentsline {section}{\numberline {3.1}Górnicza Dolina}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Stary obóz}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Nowy obóz}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Obóz na bagnie}{10}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Plac wymian}{11}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Opuszczona kopalnia}{12}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Wieża Xardasa}{12}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Zatopiona wieża Xardasa}{13}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Projektowanie postaci}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Problem geometry and setup}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Mesh generation and description}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Numerical schemes}{14}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Flowboard}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Test 1}{15}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Grid convergence}{15}{subsection.5.1.1}%
+\contentsline {chapter}{\numberline {6}Rozwój fabuły i zmiany poziomów}{16}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Test 1}{16}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Grid convergence}{16}{subsection.6.1.1}%
+\contentsline {chapter}{\numberline {7}Scenariusz}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Test 1}{17}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Grid convergence}{17}{subsection.7.1.1}%
+\contentsline {chapter}{\numberline {8}Uwagi}{18}{chapter.8}%
+\contentsline {chapter}{Bibliografia}{19}{chapter*.2}%
