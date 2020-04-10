@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {3.9}Miasto Orków}{15}{section.3.9}%
 \contentsline {section}{\numberline {3.10}Stara kopalnia}{16}{section.3.10}%
 \contentsline {section}{\numberline {3.11}Stary klasztor}{17}{section.3.11}%
-\contentsline {section}{\numberline {3.12}Stary klasztor}{18}{section.3.12}%
+\contentsline {section}{\numberline {3.12}Swiątynia śniącego}{18}{section.3.12}%
 \contentsline {section}{\numberline {3.13}Obóz bandytów}{19}{section.3.13}%
 \contentsline {chapter}{\numberline {4}Projektowanie postaci}{20}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Problem geometry and setup}{20}{section.4.1}%
