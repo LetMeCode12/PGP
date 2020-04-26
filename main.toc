@@ -19,15 +19,17 @@
 \contentsline {chapter}{\numberline {4}Projektowanie postaci}{20}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Podstawowe informacje}{20}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Historia, i fabuła związna z protagonistą}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Numerical schemes}{22}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Flowboard}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Test 1}{23}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Grid convergence}{23}{subsection.5.1.1}%
-\contentsline {chapter}{\numberline {6}Rozwój fabuły i zmiany poziomów}{24}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Test 1}{24}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Grid convergence}{24}{subsection.6.1.1}%
-\contentsline {chapter}{\numberline {7}Scenariusz}{25}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Test 1}{25}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Grid convergence}{25}{subsection.7.1.1}%
-\contentsline {chapter}{\numberline {8}Uwagi}{26}{chapter.8}%
-\contentsline {chapter}{Bibliografia}{27}{chapter*.2}%
+\contentsline {section}{\numberline {4.3}Mocne strony postaci}{23}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Słabe strony postaci}{23}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Wygląd postaci}{23}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Flowboard}{26}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Test 1}{26}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Grid convergence}{26}{subsection.5.1.1}%
+\contentsline {chapter}{\numberline {6}Rozwój fabuły i zmiany poziomów}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Test 1}{27}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Grid convergence}{27}{subsection.6.1.1}%
+\contentsline {chapter}{\numberline {7}Scenariusz}{28}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Test 1}{28}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Grid convergence}{28}{subsection.7.1.1}%
+\contentsline {chapter}{\numberline {8}Uwagi}{29}{chapter.8}%
+\contentsline {chapter}{Bibliografia}{30}{chapter*.2}%
