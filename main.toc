@@ -26,11 +26,14 @@
 \contentsline {section}{\numberline {5.1}Rozdział 1 - Witamy w Kolonii!}{26}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Rozdział 2 - Gniazdo pełzaczy}{27}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Rozdział 3 - Starożytna magia}{28}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Rozwój fabuły i zmiany poziomów}{29}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Test 1}{29}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Grid convergence}{29}{subsection.6.1.1}%
-\contentsline {chapter}{\numberline {7}Scenariusz}{30}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Test 1}{30}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Grid convergence}{30}{subsection.7.1.1}%
-\contentsline {chapter}{\numberline {8}Uwagi}{31}{chapter.8}%
-\contentsline {chapter}{Bibliografia}{32}{chapter*.2}%
+\contentsline {section}{\numberline {5.4}Rozdział 4 - Xardas}{29}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Rozdział 5 - Strażnicy portalu}{30}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Rozdział 6 - Leże śniącego}{31}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Rozwój fabuły i zmiany poziomów}{32}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Test 1}{32}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Grid convergence}{32}{subsection.6.1.1}%
+\contentsline {chapter}{\numberline {7}Scenariusz}{33}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Test 1}{33}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Grid convergence}{33}{subsection.7.1.1}%
+\contentsline {chapter}{\numberline {8}Uwagi}{34}{chapter.8}%
+\contentsline {chapter}{Bibliografia}{35}{chapter*.2}%
